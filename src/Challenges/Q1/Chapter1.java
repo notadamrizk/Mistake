@@ -1,14 +1,20 @@
-package Challenges.Ch1;
+package Challenges.Q1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CountDuplicateCharacters {
+public class Chapter1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        getLetterCount(input);
 
+
+    }
+
+    public static void getLetterCount(Scanner input){
         System.out.println("Enter text to find the individual word count.");
         String text = input.nextLine();
+
         text = text.toLowerCase();
 
         ArrayList<Character> charactersList = new ArrayList<>();
@@ -37,5 +43,4 @@ public class CountDuplicateCharacters {
             System.out.print(charactersList.get(i) + "-" + numberOfCharacters.get(i) + " ");
         }
     }
-
 }
