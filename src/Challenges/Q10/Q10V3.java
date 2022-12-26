@@ -1,4 +1,4 @@
-package Challenges.Q10_LOOK_BACK_TO_THIS;
+package Challenges.Q10;
 
 import java.util.ArrayList;
 import java.util.Collections;

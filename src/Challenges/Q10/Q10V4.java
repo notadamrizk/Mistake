@@ -1,14 +1,13 @@
-package Challenges.Q10_LOOK_BACK_TO_THIS;
+package Challenges.Q10;
 
 public class Q10V4 {
     public static void main(String[] args) {
 
-        permuteAndPrint("", "abc");
+        permuteAndPrint("", "abcd");
     }
     private static void permuteAndPrint(String prefix, String str) {
 
         int n = str.length();
-        System.out.println(n);
         if (n == 0) {
             System.out.print(prefix + " ");
         } else {

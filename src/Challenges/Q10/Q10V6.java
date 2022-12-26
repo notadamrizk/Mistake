@@ -1,11 +1,10 @@
-package Challenges.Q10_LOOK_BACK_TO_THIS;
+package Challenges.Q10;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class Q10V5 {
+public class Q10V6 {
     public static void main(String[] args) {
-        getAndPrintAllPresentationsOfStrings("abcd");
+        getAndPrintAllPresentationsOfStrings("abc");
     }
 
     public static void getAndPrintAllPresentationsOfStrings(String str){
@@ -17,21 +16,8 @@ public class Q10V5 {
 
         double number_of_permutations = getNumberOfPermutations(str.length());
 
-        System.out.println(number_of_permutations);
 
-        for(int i = 0; i < listOfLetters.size(); i++){
-            char temp = listOfLetters.get(i);
-            int indexOfTemp = listOfLetters.indexOf(temp);
-            listOfLetters.remove(listOfLetters.get(i));
-            for(int j = 0; j < number_of_permutations / listOfLetters.size(); j++){
-                System.out.print(temp);
 
-                System.out.print(" ");
-            }
-            System.out.println();
-
-            listOfLetters.add(indexOfTemp, temp);
-        }
     }
 
     public static void printArrayList(ArrayList<Character> characterArrayList){
