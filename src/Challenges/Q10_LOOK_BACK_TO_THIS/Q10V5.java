@@ -20,13 +20,17 @@ public class Q10V5 {
         System.out.println(number_of_permutations);
 
         for(int i = 0; i < listOfLetters.size(); i++){
+            char temp = listOfLetters.get(i);
+            int indexOfTemp = listOfLetters.indexOf(temp);
+            listOfLetters.remove(listOfLetters.get(i));
             for(int j = 0; j < number_of_permutations / listOfLetters.size(); j++){
-                System.out.print(listOfLetters.get(i));
-
+                System.out.print(temp);
 
                 System.out.print(" ");
             }
             System.out.println();
+
+            listOfLetters.add(indexOfTemp, temp);
         }
     }
 
