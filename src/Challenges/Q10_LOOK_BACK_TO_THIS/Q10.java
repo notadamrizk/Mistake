@@ -1,4 +1,4 @@
-package Challenges.Q10;
+package Challenges.Q10_LOOK_BACK_TO_THIS;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,8 @@ public class Q10 {
     }
 
     public static void getAndPrintAllPresentationsOfStrings(String str){
+
+
         int length = str.length();
 
         ArrayList<Integer> numbers_to_multiply = new ArrayList<>();
