@@ -3,7 +3,7 @@ package Challenges.Q10;
 public class Q10V4 {
     public static void main(String[] args) {
 
-        permuteAndPrint("", "abcd");
+        permuteAndPrint("", "abc");
     }
     private static void permuteAndPrint(String prefix, String str) {
 
