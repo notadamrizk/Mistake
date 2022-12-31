@@ -1,5 +1,7 @@
 package Challenges.Chapter1.Q22;
 
+import java.util.Arrays;
+
 public class LongestCommonPrefix {
     private static String[] texts = {"abc", "abcd", "abcde", "ab", "abcd", "abcdef"};
 
@@ -9,9 +11,8 @@ public class LongestCommonPrefix {
 
     public static String longestCommonPrefix(String[] texts){
 
-        for(int i = 0; i < texts.length; i++){
-
-        }
+        Arrays.sort(texts);
+        System.out.println(Arrays.toString(texts));
 
         return "";
     }
