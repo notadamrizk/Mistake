@@ -1,4 +1,4 @@
-package Challenges.Chapter1.Q22_GO_BACK_TO_THIS;
+package Challenges.Chapter1.Q22.Tests;
 
 import java.util.Arrays;
 
